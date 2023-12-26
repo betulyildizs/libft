@@ -1,18 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isdigit.c                                       :+:      :+:    :+:   */
+/*   ft_lstclear.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: beyildiz <beyildiz@student.42istanbul.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/12/12 18:27:28 by beyildiz          #+#    #+#             */
-/*   Updated: 2023/12/22 14:34:12 by beyildiz         ###   ########.fr       */
+/*   Created: 2023/12/12 18:38:59 by beyildiz          #+#    #+#             */
+/*   Updated: 2023/12/26 19:13:16 by beyildiz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int		ft_isdigit(char y)
+void ft_lstclear(t_list **lst, void (*del)(void*))
 {
-    return ((y >= '0' && y <= '9'));
+	t_list	*node;
+
+	node = *lst;
+	if (!lst || !*lst || !del)
+		return ;
+	
 }

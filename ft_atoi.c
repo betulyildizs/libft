@@ -1,6 +1,18 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_atoi.c                                          :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: beyildiz <beyildiz@student.42istanbul.c    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2023/12/12 18:32:26 by beyildiz          #+#    #+#             */
+/*   Updated: 2023/12/22 14:34:41 by beyildiz         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "libft.h"
 
-int	ft_useless(const char *str)
+int		ft_useless(const char *str)
 {
 	int	j;
 
@@ -12,7 +24,7 @@ int	ft_useless(const char *str)
 	return (j);
 }
 
-int	ft_atoi(const char *by)
+int		ft_atoi(const char *by)
 {
 	int					i;
 	int					sign;

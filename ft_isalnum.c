@@ -1,28 +1,18 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_isalnum.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: beyildiz <beyildiz@student.42istanbul.c    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2023/12/12 18:27:51 by beyildiz          #+#    #+#             */
+/*   Updated: 2023/12/22 14:34:28 by beyildiz         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "libft.h"
 
-int ft_isalnum(char y)
+int		ft_isalnum(char y)
 {
     return((y >= 'a' && y <= 'z') || (y >= 'A' && y <= 'Z') || (y >= '0' && y <= '9'));
 }
-/*#include <stdio.h>
-int main()
-{
-    char p[]= "//.";
-    int i=0;
-    while(p[i] != '\0')
-    {
-        int b = ft_isalnum(*p);
-        if ( b == 1)
-        {
-            b++;
-        }
-        if(b == 2)
-        {
-            printf("harf veya rakam icerir.");
-            break;
-        }
-        i++;
-    }
-    printf("harf veya rakam icermez.");
-}
-*/
