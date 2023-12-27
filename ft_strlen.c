@@ -6,20 +6,20 @@
 /*   By: beyildiz <beyildiz@student.42istanbul.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/12 18:28:34 by beyildiz          #+#    #+#             */
-/*   Updated: 2023/12/27 16:08:00 by beyildiz         ###   ########.fr       */
+/*   Updated: 2023/12/27 18:03:36 by beyildiz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t  ft_strlen(const char *by)
+size_t	ft_strlen(const char *by)
 {
-    unsigned int i;
-    
+	unsigned int	i;
+
 	i = 0;
-    while(by[i] != '\0')
-    {
-        i++;
-    }
-    return (i);
+	while (by[i] != '\0')
+	{
+		i++;
+	}
+	return (i);
 }

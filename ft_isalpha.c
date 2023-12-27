@@ -6,15 +6,15 @@
 /*   By: beyildiz <beyildiz@student.42istanbul.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/12 18:27:16 by beyildiz          #+#    #+#             */
-/*   Updated: 2023/12/17 13:18:42 by beyildiz         ###   ########.fr       */
+/*   Updated: 2023/12/27 17:51:24 by beyildiz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int ft_isalpha(char y)
+int	ft_isalpha(char y)
 {
-    return((y <= 'z' && y >= 'a') || (y <= 'Z' && y >= 'A'));
+	return ((y <= 'z' && y >= 'a') || (y <= 'Z' && y >= 'A'));
 }
 
 /*Genel olarak, C dilinde bir return ifadesinde bulunan bir 

@@ -6,13 +6,13 @@
 /*   By: beyildiz <beyildiz@student.42istanbul.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/12 18:28:24 by beyildiz          #+#    #+#             */
-/*   Updated: 2023/12/17 13:20:56 by beyildiz         ###   ########.fr       */
+/*   Updated: 2023/12/27 17:52:02 by beyildiz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int ft_isprint(char y)
+int	ft_isprint(char y)
 {
-    return(y >= 32 && y <= 126);
+	return (y >= 32 && y <= 126);
 }

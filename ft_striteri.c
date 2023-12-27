@@ -6,7 +6,7 @@
 /*   By: beyildiz <beyildiz@student.42istanbul.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/12 18:34:54 by beyildiz          #+#    #+#             */
-/*   Updated: 2023/12/26 15:23:52 by beyildiz         ###   ########.fr       */
+/*   Updated: 2023/12/27 18:02:19 by beyildiz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 void	ft_striteri(char *s, void (*f)(unsigned int, char*))
 {
 	unsigned int	i;
-	
+
 	i = 0;
 	while (s[i] != '\0')
 	{

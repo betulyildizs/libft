@@ -6,7 +6,7 @@
 /*   By: beyildiz <beyildiz@student.42istanbul.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/12 18:30:21 by beyildiz          #+#    #+#             */
-/*   Updated: 2023/12/22 12:58:33 by beyildiz         ###   ########.fr       */
+/*   Updated: 2023/12/27 18:06:00 by beyildiz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,9 +15,9 @@
 int	ft_tolower(int y)
 {
 	if (y >= 'A' && y <= 'Z')
-    {
+	{
 		return (y + 32);
-    }
+	}
 	else
 		return (y);
 }

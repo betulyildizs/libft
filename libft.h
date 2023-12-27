@@ -6,7 +6,7 @@
 /*   By: beyildiz <beyildiz@student.42istanbul.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/12 14:42:50 by beyildiz          #+#    #+#             */
-/*   Updated: 2023/12/27 16:37:31 by beyildiz         ###   ########.fr       */
+/*   Updated: 2023/12/27 18:54:01 by beyildiz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,12 +15,13 @@
 
 # include <stddef.h>
 # include <string.h>
+# include <stdlib.h>
 
-typedef struct		s_list
+typedef struct s_list
 {
-	void 			*content;
-	struct s_list 	*next;
-} 					t_list;
+	void			*content;
+	struct s_list	*next;
+}	t_list;
 
 int		ft_isalpha(char y);
 int		ft_isalnum(char y);
@@ -34,7 +35,7 @@ int		ft_lstsize(t_list *lst);
 int		ft_strncmp(char *str1, char *str2, size_t n);
 int		ft_memcmp(const void *s1, const void *s2, size_t s);
 size_t	ft_strlen(const char *by);
-size_t  ft_strlcat(char *dest, const char *src, size_t size);
+size_t	ft_strlcat(char *dest, const char *src, size_t size);
 size_t	ft_strlcpy(char *dest, const char *src, size_t size);
 t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *));
 t_list	*ft_lstnew(void *content);
@@ -47,14 +48,14 @@ char	*ft_strrchr(const char *by, int c);
 char	*ft_strjoin(char const *s1, char const *s2);
 char	*ft_strtrim(char const *s1, char const *set);
 char	*ft_strnstr(const char *s1, const char *s2, size_t s);
-char    *ft_substr(char const *s, unsigned int start, size_t len);
+char	*ft_substr(char const *s, unsigned int start, size_t len);
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char));
 void	ft_striteri(char *s, void (*f)(unsigned int, char*));
-void    *ft_memmove(void *dest, const void *src, size_t s);
-void    *ft_memcpy(void *dest, const void *src, size_t s);
+void	*ft_memmove(void *dest, const void *src, size_t s);
+void	*ft_memcpy(void *dest, const void *src, size_t s);
 void	ft_lstclear(t_list **lst, void (*del)(void*));
 void	ft_lstdelone(t_list *lst, void (*del)(void*));
-void    *ft_memchr(const void *by, int c, size_t s);
+void	*ft_memchr(const void *by, int c, size_t s);
 void	ft_lstadd_front(t_list **lst, t_list *new);
 void	ft_lstiter(t_list *lst, void (*f)(void *));
 void	ft_lstadd_back(t_list **lst, t_list *new);

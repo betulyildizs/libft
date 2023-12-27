@@ -6,18 +6,18 @@
 /*   By: beyildiz <beyildiz@student.42istanbul.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/12 18:33:37 by beyildiz          #+#    #+#             */
-/*   Updated: 2023/12/27 15:42:59 by beyildiz         ###   ########.fr       */
+/*   Updated: 2023/12/27 18:05:50 by beyildiz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char    *ft_substr(char const *s, unsigned int start, size_t len)
+char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
 	char	*new;
 	size_t	lenby;
 	size_t	finish;
-	
+
 	if (!s || !*s)
 		return (0);
 	lenby = ft_strlen(s);

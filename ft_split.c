@@ -6,17 +6,18 @@
 /*   By: beyildiz <beyildiz@student.42istanbul.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/12 18:34:16 by beyildiz          #+#    #+#             */
-/*   Updated: 2023/12/27 17:31:52 by beyildiz         ###   ########.fr       */
+/*   Updated: 2023/12/27 18:44:14 by beyildiz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_function(char *str, char c, char **res)
+char	*ft_functionby(char *str, char c, char **res)
 {
-	unsigned int	i = 0;
-	size_t 			length;
+	unsigned int	i;
+	size_t			length;
 
+	i = 0;
 	while (str[i] != '\0')
 	{
 		if (str[i] != c)
@@ -35,12 +36,15 @@ char	*ft_function(char *str, char c, char **res)
 	res[i] = 0;
 	return (res);
 }
+
 char	**ft_split(char const *s, char c)
 {
-	unsigned int	numofblocks = 1;
-	unsigned int	numofchar = 0;
+	unsigned int	numofblocks;
+	unsigned int	numofchar;
 	char			**res;
 
+	numofchar = 0;
+	numofblocks = 1;
 	while (*s)
 	{
 		if (s[numofchar] == c)
@@ -50,8 +54,7 @@ char	**ft_split(char const *s, char c)
 	res = (char **)malloc(sizeof(char *) * (numofblocks + 1));
 	if (!res)
 		return (0);
-	ft_function((char *)s, c, res);
-	return (res);
+	return ((ft_functionby((char *)s, c, res)));
 }
 /*#include "libft.h"
 
