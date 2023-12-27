@@ -6,13 +6,13 @@
 /*   By: beyildiz <beyildiz@student.42istanbul.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/12 18:26:57 by beyildiz          #+#    #+#             */
-/*   Updated: 2023/12/17 13:19:06 by beyildiz         ###   ########.fr       */
+/*   Updated: 2023/12/27 16:24:47 by beyildiz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void    *ft_bzero(void *by, size_t s)
+void	ft_bzero(void *by, size_t s)
 {
-    ft_memset(by, 0, s);
+	ft_memset(by, 0, s);
 }

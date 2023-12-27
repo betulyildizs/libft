@@ -6,7 +6,7 @@
 /*   By: beyildiz <beyildiz@student.42istanbul.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/12 18:28:34 by beyildiz          #+#    #+#             */
-/*   Updated: 2023/12/17 13:23:37 by beyildiz         ###   ########.fr       */
+/*   Updated: 2023/12/27 16:08:00 by beyildiz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,8 +15,8 @@
 size_t  ft_strlen(const char *by)
 {
     unsigned int i;
-    i = 0;
-
+    
+	i = 0;
     while(by[i] != '\0')
     {
         i++;

@@ -6,7 +6,19 @@
 /*   By: beyildiz <beyildiz@student.42istanbul.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/12 18:39:16 by beyildiz          #+#    #+#             */
-/*   Updated: 2023/12/26 14:49:45 by beyildiz         ###   ########.fr       */
+/*   Updated: 2023/12/27 15:47:31 by beyildiz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
+
+void	ft_lstiter(t_list *lst, void (*f)(void *))
+{
+	if (!lst || !f)
+		return ;
+	while (lst)
+	{
+		f(lst->content);
+		lst = lst->next;
+	}
+}

@@ -6,17 +6,17 @@
 /*   By: beyildiz <beyildiz@student.42istanbul.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/12 18:32:26 by beyildiz          #+#    #+#             */
-/*   Updated: 2023/12/22 14:34:41 by beyildiz         ###   ########.fr       */
+/*   Updated: 2023/12/27 13:10:42 by beyildiz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int		ft_useless(const char *str)
+int	ft_useless(const char *str)
 {
 	int	j;
 
-	j= 0;
+	j = 0;
 	while ((str[j] <= 13 && str[j] >= 9) || str[j] == 32)
 	{
 		j++;
@@ -24,11 +24,11 @@ int		ft_useless(const char *str)
 	return (j);
 }
 
-int		ft_atoi(const char *by)
+int	ft_atoi(const char *by)
 {
 	int					i;
 	int					sign;
-	unsigned long int   result;
+	unsigned long int	result;
 
 	result = 0;
 	sign = 1;
