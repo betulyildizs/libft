@@ -6,7 +6,7 @@
 /*   By: beyildiz <beyildiz@student.42istanbul.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/12 18:29:05 by beyildiz          #+#    #+#             */
-/*   Updated: 2023/12/27 18:41:40 by beyildiz         ###   ########.fr       */
+/*   Updated: 2023/12/28 18:12:41 by beyildiz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -52,12 +52,3 @@ void	*ft_memmove(void *dest, const void *src, size_t s)
 	}
 	return (ft_conditionby(strdest, strsource, s));
 }
-/*#include <stdio.h>
-int main()
-{
-	char s[10] = "uytjjrr";
-	char d[10];
-	printf("%s", ((char *)(ft_memmove(d, s, 10))));
-}*/
-
-// sondan yazmaya başlar

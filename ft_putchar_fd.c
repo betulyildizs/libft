@@ -6,12 +6,11 @@
 /*   By: beyildiz <beyildiz@student.42istanbul.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/12 18:35:15 by beyildiz          #+#    #+#             */
-/*   Updated: 2023/12/27 17:56:44 by beyildiz         ###   ########.fr       */
+/*   Updated: 2023/12/27 19:01:09 by beyildiz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <fcntl.h>
 
 void	ft_putchar_fd(char c, int fd)
 {
