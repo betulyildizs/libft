@@ -6,7 +6,7 @@
 /*   By: beyildiz <beyildiz@student.42istanbul.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/12 18:29:05 by beyildiz          #+#    #+#             */
-/*   Updated: 2023/12/28 18:12:41 by beyildiz         ###   ########.fr       */
+/*   Updated: 2023/12/29 18:03:25 by beyildiz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,29 +14,27 @@
 
 char	*ft_conditionby(char *deststr, char *sourcestr, size_t s)
 {
-	int		i;
-	int		a;
+	size_t	i;
 
 	if (deststr < sourcestr)
 	{
-		i = s - 1;
-		while (i >= 0)
-		{
-			deststr[i] = sourcestr[i];
-			i--;
-		}
-	}
-	else
-	{
 		i = 0;
-		a = s;
-		while (i < a)
+		while (i < s)
 		{
 			deststr[i] = sourcestr[i];
 			i++;
 		}
 	}
-	return ((deststr));
+	else
+	{
+		i = s;
+		while (i > 0)
+		{
+			deststr[i - 1] = sourcestr[i - 1];
+			i--;
+		}
+	}
+	return (deststr);
 }
 
 void	*ft_memmove(void *dest, const void *src, size_t s)

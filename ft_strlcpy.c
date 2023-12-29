@@ -6,7 +6,7 @@
 /*   By: beyildiz <beyildiz@student.42istanbul.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/12 18:29:34 by beyildiz          #+#    #+#             */
-/*   Updated: 2023/12/27 18:30:30 by beyildiz         ###   ########.fr       */
+/*   Updated: 2023/12/29 18:09:42 by beyildiz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,7 @@ size_t	ft_strlcpy(char *dest, const char *src, size_t size)
 			dest[i] = src[i];
 			i++;
 		}
+		dest[i] = '\0';
 	}
-	dest[i] = '\0';
 	return (lenght);
 }

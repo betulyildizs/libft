@@ -6,7 +6,7 @@
 /*   By: beyildiz <beyildiz@student.42istanbul.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/12 18:36:09 by beyildiz          #+#    #+#             */
-/*   Updated: 2023/12/27 17:57:13 by beyildiz         ###   ########.fr       */
+/*   Updated: 2023/12/29 18:13:09 by beyildiz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ void	ft_putnbr_fd(int n, int fd)
 	else if (n < 0)
 	{
 		ft_putchar_fd('-', fd);
-		ft_putchar_fd(-n, fd);
+		ft_putnbr_fd(-n, fd);
 	}
 	else if (n >= 10)
 	{

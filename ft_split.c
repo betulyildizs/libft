@@ -6,58 +6,60 @@
 /*   By: beyildiz <beyildiz@student.42istanbul.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/12 18:34:16 by beyildiz          #+#    #+#             */
-/*   Updated: 2023/12/28 15:24:02 by beyildiz         ###   ########.fr       */
+/*   Updated: 2023/12/29 18:56:28 by beyildiz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-#include "libft.h"
-
 char	**ft_functionby(char *str, char c, char **res)
 {
-	unsigned int	i;
-	size_t			length;
-	unsigned int	block_index;
+	unsigned int	j;
+	unsigned int	s;
 
-	i = 0;
-	block_index = 0;
-	while (str[i] != '\0')
+	j = 0;
+	while (*str)
 	{
-		if (str[i] != c)
+		if (*str != c)
 		{
-			length = 0;
-			while (str[i] && str[i] != c)
+			s = 0;
+			while (*str && *str != c)
 			{
-				++length;
-				++i;
+				++s;
+				++str;
 			}
-			res[block_index] = ft_substr(str + i - length, 0, length);
-			++block_index;
+			res[j++] = ft_substr(str - s, 0, s);
 		}
 		else
-			++i;
+			++str;
 	}
-	res[block_index] = NULL;
+	res[j] = 0;
 	return (res);
 }
 
 char	**ft_split(char const *s, char c)
 {
-	unsigned int	numofblocks;
-	unsigned int	numofchar;
-	char			**res;
+	size_t	i;
+	size_t	x;
+	char	**res;
 
-	numofchar = 0;
-	numofblocks = 1;
-	while (s[numofchar])
+	if (!s)
+		return (0);
+	x = 0;
+	i = 0;
+	while (s[i])
 	{
-		if (s[numofchar] == c)
-			numofblocks++;
-		numofchar++;
+		if (s[i] == c)
+			++i;
+		else
+		{
+			++x;
+			while (s[i] && s[i] != c)
+				++i;
+		}
 	}
-	res = (char **)malloc(sizeof(char *) * (numofblocks + 1));
+	res = malloc(sizeof(char *) * (x + 1));
 	if (!res)
-		return (NULL);
+		return (0);
 	return (ft_functionby((char *)s, c, res));
 }

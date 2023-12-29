@@ -6,7 +6,7 @@
 /*   By: beyildiz <beyildiz@student.42istanbul.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/12 18:32:12 by beyildiz          #+#    #+#             */
-/*   Updated: 2023/12/27 18:04:51 by beyildiz         ###   ########.fr       */
+/*   Updated: 2023/12/29 17:08:01 by beyildiz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,9 +18,9 @@ char	*ft_strnstr(const char *s1, const char *s2, size_t s)
 	size_t	j;
 
 	i = 0;
-	if (s2[i] != '\0')
+	if (*s2 == '\0')
 		return ((char *)s1);
-	while (*s1 && i < s)
+	while (s1[i] && i < s)
 	{
 		j = 0;
 		while (s1[i + j] == s2[j] && (i + j) < s)

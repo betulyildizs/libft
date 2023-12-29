@@ -6,7 +6,7 @@
 /*   By: beyildiz <beyildiz@student.42istanbul.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/12 18:35:32 by beyildiz          #+#    #+#             */
-/*   Updated: 2023/12/27 17:57:23 by beyildiz         ###   ########.fr       */
+/*   Updated: 2023/12/29 18:14:36 by beyildiz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ void	ft_putstr_fd(char *s, int fd)
 	unsigned int	i;
 
 	i = 0;
-	while (*s)
+	while (s[i] != '\0')
 	{
 		ft_putchar_fd(s[i], fd);
 		i++;

@@ -6,7 +6,7 @@
 /*   By: beyildiz <beyildiz@student.42istanbul.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/12 18:29:50 by beyildiz          #+#    #+#             */
-/*   Updated: 2023/12/27 18:02:54 by beyildiz         ###   ########.fr       */
+/*   Updated: 2023/12/29 17:15:53 by beyildiz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,17 +15,19 @@
 size_t	ft_strlcat(char *dest, const char *src, size_t size)
 {
 	unsigned int	i;
+	unsigned int	j;
 
 	i = 0;
-	while (*dest)
-	{
+	j = 0;
+	while (dest[i] && i < size)
 		i++;
-	}
-	while (i < size)
+	while (src[j] && (i + j + 1) < size)
 	{
-		dest[i] = src[i];
-		i++;
+		dest[i + j] = src[j];
+		j++;
 	}
-	dest[i] = '\0';
-	return (i);
+	if (i < size)
+		dest[i + j] = '\0';
+	return (i + ft_strlen(src));
 }
+// while (src[j] && (i + j) < size - 1) ynlış

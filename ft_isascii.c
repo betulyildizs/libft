@@ -6,13 +6,13 @@
 /*   By: beyildiz <beyildiz@student.42istanbul.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/12 18:28:08 by beyildiz          #+#    #+#             */
-/*   Updated: 2023/12/27 17:51:44 by beyildiz         ###   ########.fr       */
+/*   Updated: 2023/12/29 16:32:07 by beyildiz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_isascii(char y)
+int	ft_isascii(int y)
 {
 	return (y >= 0 && y <= 127);
 }
