@@ -12,7 +12,7 @@
 
 #include "libft.h"
 
-void	*ft_conditionby(char *deststr, char *sourcestr, size_t s)
+char	*ft_conditionby(char *deststr, char *sourcestr, size_t s)
 {
 	int		i;
 	int		a;
