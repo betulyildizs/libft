@@ -35,7 +35,7 @@ FILES	= ft_atoi.c \
 		  ft_tolower.c \
 		  ft_toupper.c \
 
-BONUS 	=	ft_lstnew.c \
+BONUS 	= ft_lstnew.c \
 		  ft_lstadd_front.c \
 		  ft_lstsize.c \
 		  ft_lstlast.c \

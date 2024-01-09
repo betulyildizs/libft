@@ -6,18 +6,15 @@
 /*   By: beyildiz <beyildiz@student.42istanbul.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/12 14:42:50 by beyildiz          #+#    #+#             */
-/*   Updated: 2023/12/29 17:13:32 by beyildiz         ###   ########.fr       */
+/*   Updated: 2024/01/06 12:53:47 by beyildiz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
 
-# include <stddef.h>
-# include <string.h>
 # include <unistd.h>
 # include <stdlib.h>
-# include <fcntl.h>
 
 typedef struct s_list
 {

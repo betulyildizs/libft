@@ -6,7 +6,7 @@
 /*   By: beyildiz <beyildiz@student.42istanbul.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/12 18:29:50 by beyildiz          #+#    #+#             */
-/*   Updated: 2023/12/29 17:15:53 by beyildiz         ###   ########.fr       */
+/*   Updated: 2024/01/05 18:30:32 by beyildiz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,4 +30,3 @@ size_t	ft_strlcat(char *dest, const char *src, size_t size)
 		dest[i + j] = '\0';
 	return (i + ft_strlen(src));
 }
-// while (src[j] && (i + j) < size - 1) ynlış
